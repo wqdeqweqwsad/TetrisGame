@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="next-piece">
+                <h3>下一个方块</h3>
+                <div class="next-piece-board"></div>
+            </div>
+            <div class="score">分数：<span id="score">0</span></div>
+            <div class="level">等级：<span id="level">1</span></div>
+            <button id="start-btn">开始游戏</button>
+            <button id="pause-btn">暂停</button>
+            <div class="controls">
+                <p>操作说明：</p>
+                <ul>
+                    <li>← →：左右移动</li>
+                    <li>↑：旋转</li>
+                    <li>↓：加速下落</li>
+                    <li>空格：直接下落</li>
+                </ul>
+            </div>
+        </div>
+        <div class="game-board"></div>
+    </div>
+    <audio id="clear-sound" src="sounds/clear.mp3"></audio>
+    <audio id="rotate-sound" src="sounds/rotate.mp3"></audio>
+    <audio id="drop-sound" src="sounds/drop.mp3"></audio>
+    <div class="mobile-controls">
+        <button id="rotate-btn">旋转</button>
+        <div class="direction-controls">
+            <button id="left-btn">←</button>
+            <button id="down-btn">↓</button>
+            <button id="right-btn">→</button>
+        </div>
+        <button id="drop-btn">直接下落</button>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html> 
